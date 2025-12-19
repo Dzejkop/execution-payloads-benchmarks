@@ -235,7 +235,7 @@ class Generator:
         }
 
     async def get_fcu_request(self, block: BlockData) -> dict:
-        version = self.get_payload_version(block)
+        version = self.get_fcu_version(block)
         block_number = block["number"]
         return {
             "id": block_number,
